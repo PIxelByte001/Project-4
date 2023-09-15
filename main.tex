@@ -1,0 +1,50 @@
+\documentclass[]{book}
+
+\title{Statistics}
+\author{Aseem Mahajan}
+\date{September 12, 2023}
+
+\begin{document}
+
+%---------------Beginning of preface---------------%
+\chapter*{Preface}
+\section*{Purpose}
+The use of probability models and statistical models for analysing data has become common practice in currently all scientific disciplines. This book attempts to provide a comprehensive introduction to those models and methods most likely to be encountered and used by students in their careers in engineering and the natural sciences. Although the examples and exercises have been designed with scientists and engineers in mind, most of the methods covered are basic to statistical analyses in many other disciplines, so that students of business and the social sciences will also profit from reading the book.
+
+\section*{Approach}
+Students in a statistics course designed to serve other majors may be initially skeptical of the value and relevance of the subject matter, but my experience is that students can be turned on to statistics by the use of good examples and exercises that blend their everyday experiences with their scientific interests. Consequently, I have worked hard to find examples of real, rather than artificial data -- data that someone thought was worth collecting and analyzing. Many of the methods presented, especially in the later chapters on statistical inference, are illustrated by analyzing data taken from published sources, and many of the exercises also involve working with such data. Sometimes the reader may be unfamiliar with the context of a particular problem (as indeed I often was), but I have found that students are more attracted by real problems with a somewhat strange context than by patently artificial problems in a familiar setting.
+
+\section*{Content}
+Chapter 1 begins with some basic concepts and terminology -- population, sample, descriptive and influential statistics, enumerative versus analytic studies, and so on -- and continues with a survey of important graphical and numerical descriptive methods. A rather traditional development of probability is given in Chapter 2, followed by probability distributions of discrete and continous random variables in Chapter 3 and 4, respectively. Joint distributions and their properties are discussed in the first part of Chapter 5. The latter part of this chapter involves statistics and their sampling distributions, which form the bridge between probability and inference. The next three chapters cover point estimation, statistical intervals, and hypothesis testing based on a single sample. Methods of inference involving two independent samples and paired data are presented in Chapter 9. The analysis of variance is the subject of Chapters 10 and 11 (single-factor and multifactor respectively). Regression makes its initial appearance in Chapter 12 (the simple linear regression model and correlation) and returns for an extensive encore in Chapter 13. the last three chapters develop chi-squared methods, distribution-free (nonparametric) procedures, and techniques from statistical quality control.
+
+%------------------End of preface------------------%
+
+\chapter{Overview and Descriptive Statistics}
+\section*{Introduction}
+Statistical concepts and methods are not only useful but indeed often indispensable in understanding the world around us. They provide ways of gaining new insights into the behaviour of many phenomena that you will encounter in your chosen field of specialization in engineering or science.
+
+The discipline of statistics teaches us how to make intelligent judgements and informed decisions in the presence of uncertainty and variation. Without uncertainty or variation, there would be little need for statistical methods or statisticians. If every component of a particular type had exactly the same lifetime, if all resistors produced by a certain manufacturer had the same resistance value, if pH determinations for soil specimens from a particular locale give identical results, and so on, then a single observationn would reveal all desired information.
+
+An interesting manifestation of variation arises in the course of performing emissions testing on motor vehicles. The expense and time requirements of the Federal Test Procedure (FTP) preclude its widespread use in vehicle inspection programs. As a result, many agencies have developed less costly and quicker tests, which it is hoped replicate FTP results. According to the journal article "Motor Vehicle Emissions Variability" \emph{J. of the Air and Waste Mgmt. Assoc., 1996: 667-675}, the acceptance of the FTP as a gold standard has led to the widespread belief that repeated measurements in the same vehicle would yield identical (or nearly identical) results. The authors of the article applied the FTP to seven vehicles characterized as "high emitters." Here are the results for one such vehicle:
+
+\begin{center}\[
+    \begin{array}{ccccc}
+         HC \ (gm/mile) & 13.8 & 18.3 & 32.2 & 32.5\\
+         CO \ (gm/mile) & 118 & 149 & 232 & 236
+    \end{array}\]
+\end{center}
+
+
+The substantial variation in both the HC and CO measurements casts considerable doubt on conventional wisdom and makes it much more difficult to make precise assessments about emission levels.
+
+How can statistical techniques be used to gather information and draw conclusions? Suppose, for example, that a materials engineer has developed a coating for retarding corrosion in metal pipe under specified circumstances. If this coating is applied to different segments of pipe , variation in environmental conditions and in the segment themselves will result in more susbstantial corrosion on some segments than on others. Method of statistical analysis could be used on data from such an experiment to decide whether the average amount of corrosion exceeds an upper specification limit of some sort or to predict how much corrosion will occur on a single piece of pipe. 
+
+Alternatively, suppose the engineer has developed the coating in the belief that it will be superior to the currently used coating. A comparative experiment could be carried out to investigate this issue by applying the current coating to some segments of pipe and the new coating to other segments. This must be done with care lest the wrong conclusion emerge. For example, perhaps the average amount of corrosion is identical for the two coatings. However, the new coating may be applied to segments that have superior ability to resist corrosion and under less stressful environmental conditions compared to the segments and conditions for the current coating. The investigator would then likely observe a difference betweeen the two coatings attributable not to the coatings themselves, but just to extraneous variation. Statistics offer not only methods for analyzing the results of experiments once they have been carried out but also suggestions for how experiments can be performed in an efficient manner to mitigate the effects of variation and have a better chance of producing correct conclusions. 
+
+\subsection{Populations, Samples and Processes}
+Engineers and scientists are constantly exposed to collections of facts, or \textbf{data}, both in their professional capacities and in everyday activities. The discipline of statistics provides methods for organizing and summarizing data and for drawing conclusions based on information contained in the data.
+
+\subsection{Pictorial and Tabular Methods in Descriptive Statistics}
+Descriptive statistics can be divided into two general subject areas. In this section, we consider representing a data set using visual techniques. In Sections 1.3 and 1.4, we will develop some numerical summary measures for data sets. Many visual techniques may already be familiar to you: frequency tables, tally sheets, histograms, pie charts, bar graphs, scatter diagrams, and the like. Here we focus on a selected few of these techniques that are most useful and relevant to probability and inferential statistics.
+
+\end{document}
